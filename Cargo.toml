@@ -6,7 +6,7 @@ edition = "2021"
 keywords = []
 license = "MIT/Apache-2.0"
 name = "kube-coordinate"
-version = "0.1.0"
+version = "0.1.1"
 
 [dependencies]
 chrono = {version = "0.4.31", default-features = false}
