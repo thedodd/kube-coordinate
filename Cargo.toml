@@ -1,12 +1,12 @@
 [package]
 authors = ["Anthony Dodd <dodd.anthonyjosiah@gmail.com>"]
-categories = []
+categories = ["asynchronous", "api-bindings"]
 description = "Kubernetes leader election using the coordination.k8s.io API."
 edition = "2021"
-keywords = []
+keywords = ["kubernetes", "election", "coordination", "consensus", "lease"]
 license = "MIT/Apache-2.0"
 name = "kube-coordinate"
-version = "0.1.2"
+version = "0.1.3"
 
 [dependencies]
 chrono = {version = "0.4.31", default-features = false}
