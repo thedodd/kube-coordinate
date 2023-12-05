@@ -2,7 +2,8 @@
 <div align="center">
 
 [![](https://img.shields.io/crates/v/kube-coordinate.svg?color=brightgreen&style=flat-square)](https://crates.io/crates/kube-coordinate)
-[![Build Status](https://github.com/thedodd/kube-coordinate/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/thedodd/kube-coordinate/actions)
+[![docs.rs](https://docs.rs/kube-coordinate/badge.svg)](https://docs.rs/kube-coordinate)
+[![Build Status](https://github.com/thedodd/kube-coordinate/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/thedodd/kube-coordinate/actions)
 ![](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue?style=flat-square)
 ![](https://img.shields.io/crates/d/kube-coordinate?label=downloads%20%28crates.io%29&style=flat-square)
 
