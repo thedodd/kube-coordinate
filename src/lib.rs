@@ -549,7 +549,7 @@ impl LeaderElector {
             // If we are a follower, then we just wait to check based on configuration lease duration
             // and the last observed change. We also jitter to mitigate contention.
             State::Following { last_updated, .. } => {
-                let rand_val: f64 = rand::thread_rng().gen_range(0.01..1.0);
+                let rand_val: f64 = rand::rng().random_range(0.01..1.0);
                 let jitter = rand_val * JITTER_FACTOR * self.config.lease_duration.as_secs_f64();
                 let delay = self.config.lease_duration + Duration::from_secs_f64(jitter);
                 (last_updated, delay)
@@ -557,7 +557,7 @@ impl LeaderElector {
             // If an error recently took place, then we use the configured retry period plus a bit of jitter.
             State::Standby if self.had_error_on_last_try => {
                 self.had_error_on_last_try = false;
-                let rand_val: f64 = rand::thread_rng().gen_range(0.5..1.5);
+                let rand_val: f64 = rand::rng().random_range(0.5..1.5);
                 let jitter = rand_val * JITTER_FACTOR * self.config.retry_period.as_secs_f64();
                 return Duration::from_secs_f64(jitter);
             }
