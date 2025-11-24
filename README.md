@@ -48,7 +48,7 @@ cargo add kube-coordinate
 This crate follows the semver major version of the `kube` crate.
 
 ### k8s-openapi features
-In order to ensure that this create remains future proof, and compatible with future versions of K8s, this crate specifies a default feature `k8s-latest` which ensures that `k8s-openapi/latest` feature is enabled. Simply disable default features for this create, and specify an override for the feature as `kube-coordinate/k8s-openapi/latest`.
+In order to ensure that this create remains future proof, and compatible with future versions of K8s, this crate specifies a default feature `k8s-latest` which ensures that `k8s-openapi/latest` feature is enabled. Simply disable `default` features for this create, and specify one of the other `k8s-openapi/v*` features in your Cargo.toml as needed.
 
 ### License
 kube-coordinate is licensed under the terms of the MIT License or the Apache License 2.0, at your choosing.
